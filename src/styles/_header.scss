@@ -1,0 +1,76 @@
+@use 'variaveis';
+
+.navbar{
+    top: 0;
+    left: 0;
+    position: sticky;
+    z-index: 1;
+    padding: 0;
+    background-color: variaveis.$corDeFundo;
+    color: variaveis.$corTextoPrincipal;
+    
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+
+        @media( max-width: 768px) {
+            margin: -100;
+            min-height: 60px;
+            margin-bottom: 8px;
+
+            .navbar-toggler{
+                padding: 4px;
+
+                &-icon{
+                    height: 25px;
+                    width: 25px;
+                }
+            }
+        }
+
+    }
+
+    &-brand{
+        max-width: 60px;
+        width: 100%;
+
+        @media( max-width: 768px) {
+            max-width: 120px;
+        }
+    }
+
+}
+
+.nav .nav-link{
+    margin: 0 4px;
+    background-color: variaveis.$corDeFundoBotaoSecundario;
+    color: lighten(variaveis.$corTextoBotao, 15%);
+    border-color: variaveis.$corDeFundoBotaoPrimario;
+
+    @media( max-width: 768px) {
+        margin: 4px 0;
+    }
+
+    &:hover{
+        background-color: lighten(variaveis.$corDeFundoBotaoSecundario, 15%);
+    }
+}
+
+.nav .nav-link.active{
+    background-color: variaveis.$corDeFundoBotaoPrimario;
+    color: lighten($color: variaveis.$corTextoBotao, $amount: 20%);
+    border: 1px solid variaveis.$corDeFundoBotaoPrimario;
+
+    &:hover{
+        background-color: lighten(variaveis.$corDeFundoBotaoPrimario, 20%);
+    }
+}
+
+.navbar-toggler{
+    background-color: lighten(variaveis.$corDeFundoBotaoPrimario, 10%);
+}
+
+.section{
+    height: 200px;
+}

@@ -1,0 +1,95 @@
+@use'variaveis';
+@use 'header';
+@use 'hero';
+@use 'elenco';
+@use 'faqs';
+@use 'footer';
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
+
+html{
+    font-family: Avenir, Helvetica, sans-serif;
+    color: variaveis.$corTextoPrincipal;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    background-color: variaveis.$corDeFundo;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextoPrincipal;
+}
+
+@mixin title($fontSize: 40px) {
+    @include text($fontSize);
+    color: variaveis.$corTextoSecundario;
+}
+
+.text--big{
+    @include text(18px);
+
+    @media (max-width: 768px) {
+        @include text(15px);
+    }
+}
+
+.text{
+    @include text;
+
+    @media (max-width: 768px) {
+        @include text(12px);
+        line-height: 15px;
+    }
+}
+
+.text--small{
+    @include text(12px);
+
+    @media (max-width: 768px) {
+        @include text(11px);
+    }
+}
+
+.title--big{
+    @include title(44px);
+    
+    @media (max-width: 768px) {
+        @include title(20px);
+    }
+}
+
+.title{
+    @include title;
+
+    @media (max-width: 768px) {
+        @include title(24px);
+    }
+}
+
+.title--small {
+    @include title(28px);
+
+    @media (max-width: 768px) {
+        @include title(22px);
+    }
+}
+
+.link-text {
+    @include text(18px);
+    color: variaveis.$corTextoSecundario;
+    text-decoration: underline;
+}

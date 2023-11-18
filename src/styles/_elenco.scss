@@ -1,0 +1,56 @@
+@use 'variaveis';
+
+.elenco{
+    width: 98vw;
+    height: 100vh;
+
+    h2{
+        font-style: italic;
+    }
+    
+    &__hero{
+        height: 60vh;
+        background-image: url(../../src/images/personagens.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 24px;
+
+        @media screen and (max-width: 480px) {
+            height: 45vh;
+        }
+    }    
+
+    &__atores{
+        height: 60vh;
+
+        @media screen and (max-width: 480px) {
+            height: 35vh;
+        }
+
+        &__items{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 16px;
+
+            @media screen and (max-width: 480px) {
+                margin-top: 4px;
+            }
+    
+            &__ator{
+                display: block;
+                text-align: center;
+
+                @media screen and (max-width: 480px) {
+                    width: 80px;
+                }
+        
+                p{
+                    line-height: 16px;
+                    color: variaveis.$corTextoSecundario;
+                }
+            }
+        }
+    }
+}

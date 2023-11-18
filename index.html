@@ -2,11 +2,231 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site HP</title>
-    <link rel="stylesheet" href="./dist/css/main.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="dist/css/main.css">
+    <title>Harry potter</title>
 </head>
 <body>
-    
+    <header id="cabecalho" class="navbar navbar-expand-lg sticky-top">
+        <div class="navbar__container container-fluid text">
+            <img class="navbar-brand" src="./src/images/logo-hp.png" alt="Logo do HP">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu">
+                <ul class="nav nav-pills d-flex justify-content-between d-md-flex justify-content-md-end p-0">
+                    <li class="nav-item fw-bold">
+                        <a href="#hero" class="nav-link active">
+                            <!-- <i class="bi bi-calendar-check me-1"></i> -->
+                            Visão Geral
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#elenco" class="nav-link">
+                            Elenco
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#faqs" class="nav-link">
+                            FAQs
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="hero" class="hero">
+            <div class="hero__content">
+                <div class="hero__content__box">
+                    <h1 class="title--big">
+                        Harry Potter
+                    </h1>
+                    <p class="text">
+                        <span class="hero__content__box__idade">
+                            12
+                        </span>
+                        Lançamento 2001.
+                    </p>
+                    <p class="text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, minima illo libero quis aperiam provident nostrum iste beatae maiores, corporis architecto illum a dolore aspernatur dignissimos numquam quos id dolor.                    </p>
+                </div>
+            </div>    
+        </section>
+        <section id="elenco" class="elenco" container>
+            <div class="elenco__hero">
+                <div class="elenco__atores">
+                    <div class="elenco__titulo">
+                        <h2 class="title--big">
+                            Elenco
+                        </h2>
+                    </div>
+                </div>
+                <div class="elenco__atores__items">
+                    <div class="elenco__atores__items__ator">
+                        <img class="img-thumbnail rounded-3" src="./src/images/elenco/harry.jpg" alt="harry potter">
+                        <p class="text--small">
+                            Daniel Radcliffe<br>
+                            (Harry Potter)
+                        </p>
+                    </div>
+                    <div class="elenco__atores__items__ator">
+                        <img class="img-thumbnail rounded-3" src="./src/images/elenco/hermione.jpg" alt="hermione">
+                        <p class="text--small">
+                            Emma Watson<br>
+                            (Hermione Watson)
+                        </p>
+                    </div>
+                    <div class="elenco__atores__items__ator">
+                        <img class="img-thumbnail rounded-3" src="./src/images/elenco/ron.jpg" alt="Rupert Grint">
+                        <p class="text--small">
+                            Rupert Grint<br>
+                            (Ron Weasley)
+                        </p>
+                    </div>
+                    <div class="elenco__atores__items__ator">
+                        <img class="img-thumbnail rounded-3" src="./src/images/elenco/draco.jpg" alt="Draco">
+                        <p class="text--small">
+                            Tom Felton<br>
+                            (Draco Malfoy)
+                        </p>
+                    </div>
+                    <div class="elenco__atores__items__ator">
+                        <img class="img-thumbnail rounded-3" src="./src/images/elenco/dumbledore.jpg" alt="dumbledore   ">
+                        <p class="text--small">
+                            Michael Gambon<br>
+                            (Albus Dumbledore)
+                        </p>
+                    </div>
+                    <div class="elenco__atores__items__ator">
+                        <img class="img-thumbnail rounded-3" src="./src/images/elenco/minerva.jpg" alt="minerva">
+                        <p class="text--small">
+                            Maggie Smith<br>
+                            (Minerva McGonagall)
+                        </p>
+                    </div>
+                    <div class="elenco__atores__items__ator">
+                        <img class="img-thumbnail rounded-3" src="./src/images/elenco/snape.jpg" alt="snape">
+                        <p class="text--small">
+                            Alan Rickman<br>
+                            (Severus Snape)
+                        </p>
+                    </div>
+                    <div class="elenco__atores__items__ator">
+                        <img class="img-thumbnail rounded-3" src="./src/images/elenco/voldemort.jpg" alt="voldemort">
+                        <p class="text--small">
+                            Ralph Fiennes<br>
+                            (Lord Voldemort)
+                        </p>
+                    </div>
+                    <div class="elenco__atores__items__ator">
+                        <img class="img-thumbnail rounded-3" src="./src/images/elenco/bellatrix.jpg" alt="bellatrix">
+                        <p class="text--small">
+                            Helena Bonham Carter<br>
+                            (Bellatrix Lestrange)
+                        </p>
+                    </div>
+                    <div class="elenco__atores__items__ator">
+                        <img class="img-thumbnail rounded-3" src="./src/images/elenco/neville.jpg" alt="neville">
+                        <p class="text--small">
+                            Matthew Lewis<br>
+                            (Neville Longbotton)
+                        </p>
+                    </div>
+                </div>
+                <picture class="elenco__image col-9"></picture>
+            </div>
+        </section>
+        <section id="faqs" class="faqs">
+            <h2 class="title--big">Perguntas frequentes</h2>
+            <ul class="faqs__questions">
+                <li class="faqs__questions__items" data-faq-question>
+                    <div class="faqs__questions__items__question text--big">
+                        <p>
+                            Lorem fugiat ut culpa explicabo blanditiis eos optio fuga perferendis ratione rem doloribus temporibus?
+                        </p>
+                    </div>
+                    <div class="faqs__questions__items__answer text">
+                        <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut deleniti repellat ex nam impedit obcaecati necessitatibus, autem soluta, maiores eius cupiditate voluptatum officiis, recusandae consequuntur. Minima consectetur quibusdam quo sint.                        </p>
+                    </div>
+                </li>
+                <li class="faqs__questions__items" data-faq-question>
+                    <div class="faqs__questions__items__question text--big">
+                        <p>
+                            Lorem fugiat ut culpa explicabo blanditiis eos optio fuga perferendis ratione rem doloribus temporibus?
+                        </p>
+                    </div>
+                    <div class="faqs__questions__items__answer text">
+                        <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut deleniti repellat ex nam impedit obcaecati necessitatibus, autem soluta, maiores eius cupiditate voluptatum officiis, recusandae consequuntur. Minima consectetur quibusdam quo sint.                        </p>
+                    </div>
+                </li>
+                <li class="faqs__questions__items" data-faq-question>
+                    <div class="faqs__questions__items__question text--big">
+                        <p>
+                            Lorem fugiat ut culpa explicabo blanditiis eos optio fuga perferendis ratione rem doloribus temporibus?
+                        </p>
+                    </div>
+                    <div class="faqs__questions__items__answer text">
+                        <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut deleniti repellat ex nam impedit obcaecati necessitatibus, autem soluta, maiores eius cupiditate voluptatum officiis, recusandae consequuntur. Minima consectetur quibusdam quo sint.                        </p>
+                    </div>
+                </li>
+                <li class="faqs__questions__items" data-faq-question>
+                    <div class="faqs__questions__items__question text--big">
+                        <p>
+                            Lorem fugiat ut culpa explicabo blanditiis eos optio fuga perferendis ratione rem doloribus temporibus?
+                        </p>
+                    </div>
+                    <div class="faqs__questions__items__answer text">
+                        <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut deleniti repellat ex nam impedit obcaecati necessitatibus, autem soluta, maiores eius cupiditate voluptatum officiis, recusandae consequuntur. Minima consectetur quibusdam quo sint.                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <img class="footer__logo" src="./src/images/logo-hp.png" alt="HP">
+                <ul class="footer__links">
+                    <li class="footer__links__item">
+                        <a href="#" class="text--small">Termor e Condições de Uso</a>
+                    </li>
+                    <li class="footer__links__item">
+                        <a href="#" class="text--small">Política e privacidade</a>
+                    </li>
+                    <li class="footer__links__item">
+                        <a href="#" class="text--small">Proteção de dados Brasil</a>
+                    </li>
+                    <li class="footer__links__item">
+                        <a href="#" class="text--small">Anúncios personalizados</a>
+                    </li>
+                    <li class="footer__links__item">
+                        <a href="#" class="text--small">Dispositivos compatíveis</a>
+                    </li>
+                    <li class="footer__links__item">
+                        <a href="#" class="text--small">Ajuda</a>
+                    </li>
+                    <li class="footer__links__item">
+                        <a href="#" class="text--small">Sobre Harry Potter</a>
+                    </li>
+                </ul>
+                <p class="text--small">
+                    ® 2023 Harry Potter Company. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.
+                </p>
+                <p class="text--small">
+                    Harry Potter, é baseado em assinatura e sujeito a termos e condições. O serviço Harry Potter é comercializado por Harry Potter Company (Brasil) Ltda., World Trade Center, Av. JavaScript, 12.551, 12.552, 12.553, Piso 10, São Paulo/SP – CEP 04444-555, Brasil e CNPJ/M 00.000.000/0001-00
+                </p>
+            </div>
+        </footer>
+
+    <script src="./dist/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,54 @@
+@use 'variaveis';
+
+.hero{
+    position: sticky;
+    width: 98vw;
+    height: 100vh;
+    min-height: 80vh;
+    display: grid;
+    background-image: url(../../src/images/hero-hp.jpeg);
+    background-size: cover;
+    align-items: center;
+
+    @media screen and (max-width: 1023px) {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        align-items: normal;
+    }
+
+    &__content{
+        max-width: 40vw;
+        width: 100%;
+        display: grid;
+    
+        @media screen and (max-width: 1023px) {
+            max-width: 1000vw;
+            align-items: normal;
+            margin-top: 300px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 819px) {
+            margin-top: 400px;
+        }           
+    
+        &__box{
+            margin: 0 0 0px 8px;
+
+            h1{
+                font-style: italic;
+            }
+    
+            p{
+                color: variaveis.$corTextoSecundario;
+                margin: 8px 8px;
+            }
+
+            &__idade{
+                margin-right: 8px;
+                padding: 2px;
+                border: 1px solid variaveis.$corTextoSecundario;
+            }
+        }
+    }
+}
